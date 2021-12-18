@@ -26,11 +26,13 @@ import com.emon.weatherapp.databinding.ActivityMainBinding
 import com.emon.weatherapp.model.dataresponse
 import com.emon.weatherapp.model.tempResponse
 import com.google.android.gms.location.*
+import dagger.hilt.android.AndroidEntryPoint
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
+import javax.inject.Inject
 
 const val BASE_URL = "http://api.openweathermap.org/data/"
 
@@ -43,7 +45,6 @@ class MainActivity : AppCompatActivity() {
     lateinit var locationRequest: LocationRequest
     val PERMISSION_ID = 1010
 
-    @RequiresApi(Build.VERSION_CODES.O)
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
@@ -218,7 +219,6 @@ class MainActivity : AppCompatActivity() {
     }
 
 
-    @RequiresApi(Build.VERSION_CODES.O)
     private fun createNotificationChannel()
     {
         val name = "Weather Notification"
