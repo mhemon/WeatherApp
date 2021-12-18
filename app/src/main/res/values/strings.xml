@@ -1,6 +1,6 @@
 <resources>
     <string name="app_name">WeatherApp</string>
     <string name="icon">°</string>
-    <string name="google_maps_key">AIzaSyB89fXUkF8wt1b7Sn1w0pYbe_p2RfB1BX4</string>
-    <string name="weather_api_key">f4e93641e76ebfcde9f87984a60c7f5b</string>
+    <string name="google_maps_key">xxxxxxxxxxxxx</string>
+    <string name="weather_api_key">xxxxxxxxxxxxx</string>
 </resources>
